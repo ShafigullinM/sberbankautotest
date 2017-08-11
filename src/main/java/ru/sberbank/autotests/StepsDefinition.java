@@ -36,7 +36,7 @@ public class StepsDefinition {
         Assert.assertTrue("Регион имеет неправильное значение", mainpage.getPageRegion().equals(value));
     }
 
-    @Когда("проскролили к футеру страницы")
+    @Когда("^проскролили к футеру страницы$")
     public void moveToFooterOfPage() {
         mainpage.moveToFooter();
     }
